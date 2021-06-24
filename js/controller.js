@@ -305,9 +305,11 @@ function export_data(arr_rows) {
 						}
 						cuscar_body=cuscar_body+csc_cofd+unpodcountry+":::"+unpodcountry_desc+csc_eof;
 						/*cuscar_body=cuscar_body+csc_pol+pol_code+"::6:ANTWERP"+csc_eof;*/
+						cuscar_body=cuscar_body+csc_dod+":210628"+":101"+csc_eof;
 						cuscar_body=cuscar_body+csc_packtypecode+csc_eof;
 						cuscar_body=cuscar_body+csc_ship+shipper+":"+shipper+"::"+csc_eof;
 						cuscar_body=cuscar_body+csc_cons+consignee+":"+consignee_address+" "+transit+"::"+csc_eof;
+						cuscar_body=cuscar_body+csc_poc+unpodcountry_desc+csc_eof;
 						cuscar_body=cuscar_body+csc_con1+notify+csc_eof;
 						cuscar_body=cuscar_body+csc_packtype+category+csc_eof;
 						cuscar_body=cuscar_body+csc_goods+condition+" "+goods+csc_eof;
